@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { MyRoutes } from "./routers/routes";
 
 function App() {
