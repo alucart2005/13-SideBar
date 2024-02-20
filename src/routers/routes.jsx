@@ -7,7 +7,6 @@ import { Reportes } from "../pages/Reportes";
 
 export function MyRoutes() {
   return (
-    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/productos" element={<Productos />} />
@@ -15,6 +14,5 @@ export function MyRoutes() {
         <Route path="/diagramas" element={<Diagramas />} />
         <Route path="/reportes" element={<Reportes />} />
       </Routes>
-    </BrowserRouter>
   );
 }
