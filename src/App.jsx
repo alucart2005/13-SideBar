@@ -38,8 +38,9 @@ const Container = styled.div`
   grid-template-columns: 90px auto;
   background: ${({ theme }) => theme.bgtotal};
   transition: all 0.6s;
+  color:${({theme})=>theme.text} ;
   &.active {
-    grid-template-columns: 300px auto;
+    grid-template-columns: 250px auto;
   }
 `;
 

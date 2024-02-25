@@ -1,8 +1,9 @@
 import styled from "styled-components";
-export function Home() {
+
+export function Exit() {
   return (
     <Container>
-      <h1>Home</h1>
+      <h1>BYE !!!</h1>
     </Container>
   );
 }

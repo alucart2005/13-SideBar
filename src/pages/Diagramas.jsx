@@ -8,5 +8,5 @@ export function Diagramas() {
   );
 }
 const Container = styled.div`
-
+  height: 100vh;
 `;

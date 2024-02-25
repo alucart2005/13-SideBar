@@ -36,7 +36,7 @@ export function Sidebar({ sidebarOpen, setSidebarOpen }) {
         <div className="Imgcontent">
           <img src={logo} alt="" />
         </div>
-        <h2>codewizardAI</h2>
+        <h2>CodewizardAI</h2>
       </div>
       {linksArray.map(({ icon, label, to }) => (
         <div className="LinkContainer" key={label}>
@@ -117,12 +117,12 @@ const SecundaryLinksArray = [
   {
     label: "Configuración",
     icon: <AiOutlineSetting />,
-    to: "/",
+    to: "/configuracion",
   },
   {
     label: "Salir",
     icon: <MdLogout />,
-    to: "/null",
+    to: "/exit",
   },
 ];
 
@@ -158,14 +158,14 @@ const Container = styled.div`
   }
   .Logocontent {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding-bottom: ${V.lgSpacing};
     .Imgcontent {
       display: flex;
       cursor: pointer;
       transition: all 0.3s;
-      transform: ${({ $isOpen }) => ($isOpen ? `scale(0.7)` : `scale(1.5)`)};
+      transform: ${({ $isOpen }) => ($isOpen ? `scale(1)` : `scale(1.5)`)};
       img {
         max-width: 100%;
         height: auto;
@@ -246,7 +246,7 @@ const Container = styled.div`
               height: 0;
               &:checked + .slider:before {
                 left: 4px;
-                content: "🌚";
+                content: "😎";
                 transform: translateX(26px);
               }
             }
