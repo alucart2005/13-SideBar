@@ -10,9 +10,9 @@ export const ThemeContext = React.createContext(null);
 function App() {
   const [theme, setTheme] = useState("Light");
   const themeStyle = theme === "Light" ? Light : Dark;
-  const ChangeTheme = () => {
-    setTheme((theme) => (theme === "Light" ? "Dark" : "Light"));
-  };
+  // const ChangeTheme = () => {
+  //   setTheme((theme) => (theme === "Light" ? "Dark" : "Light"));
+  // };
   const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <>
@@ -37,6 +37,7 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 90px auto;
   background: ${({ theme }) => theme.bgtotal};
+  transition: all 0.6s;
   &.active {
     grid-template-columns: 300px auto;
   }
