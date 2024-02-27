@@ -8,5 +8,5 @@ export function Configuracion() {
   );
 }
 const Container = styled.div`
-  height: 100v;
+  height: 100vh;
 `;
