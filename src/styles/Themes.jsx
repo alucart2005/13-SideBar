@@ -33,7 +33,7 @@ export const Light = {
   gray200: "#f1f1f1",
   gray100: "#ffffff",
   green500: "#F9516E",
-  olive500: "#e3ffa8",
+  olive500: "#494d42",
   white: "#ffffff",
   textprimary: "#2a2828",
   textsecondary: "#f1f1f1",
@@ -79,7 +79,7 @@ export const Dark = {
   gray100: "#ffffff",
 
   green500: "#F9516E",
-  olive500: "#e3ffa8",
+  olive500: "#a1c25b",
 
   white: "#ffffff",
 

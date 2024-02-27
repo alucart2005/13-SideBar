@@ -193,6 +193,9 @@ const Container = styled.div`
           font-size: 25px;
         }
       }
+      span {
+        color: ${(props) => props.theme.olive500};
+      }
       &.active {
         svg,
         span {
@@ -210,18 +213,21 @@ const Container = styled.div`
       display: block;
       padding: 10px;
       font-weight: 700;
-      opacity: ${({$isOpen})=>($isOpen?`1`:`0`)};
+      opacity: ${({ $isOpen }) => ($isOpen ? `1` : `0`)};
       transition: all 0.3s;
       white-space: nowrap;
-      overflow:hidden
+      overflow: hidden;
     }
     .ToggleContent {
-      margin: ${({$isOpen}) => ($isOpen ? `auto 40px` : `auto 15px`)};
+      margin: ${({ $isOpen }) => ($isOpen ? `auto 40px` : `auto 15px`)};
       width: 36px;
       height: 20px;
       border-radius: 10px;
       transition: all 0.3s;
       position: relative;
+      span {
+        color: ${(props) => props.theme.olive500};
+      }
       .theme-container {
         background-blend-mode: multiply, multiply;
         transition: 0.4s;
@@ -257,7 +263,8 @@ const Container = styled.div`
               left: 0;
               right: 0;
               bottom: 0;
-              background: ${({$themeUse})=>($themeUse==="Light"?V.lightcheckbox:V.checkbox)};
+              background: ${({ $themeUse }) =>
+                $themeUse === "Light" ? V.lightcheckbox : V.checkbox};
               transition: 0.4s;
               &::before {
                 position: absolute;
@@ -269,10 +276,10 @@ const Container = styled.div`
                 line-height: 0px;
                 transition: 0.4s;
               }
-              &.round{
-                border-radius:34px;
-                &::before{
-                  border-radius:50%
+              &.round {
+                border-radius: 34px;
+                &::before {
+                  border-radius: 50%;
                 }
               }
             }
